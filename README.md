@@ -31,9 +31,10 @@ RAG-Wikipedia-Assistant/
 │   ├── scraper/
 │   │   └── scraper.py          # Wikipedia text scraper
 │   ├── rag/
-│       └── rag_chain.py        # RAG pipeline logic
+│       └── rag_chain.py        # RAG pipeline
 │
-├── .env_example                # Template for API keys (do not include real keys)
+├── .env_example                # Template for API keys
 ├── requirements.txt            # Dependencies
 └── README.md                   # Documentation
+
 
