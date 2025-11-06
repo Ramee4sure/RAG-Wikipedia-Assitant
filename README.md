@@ -24,9 +24,8 @@ git clone https://github.com/Ramee4sure/RAG-Wikipedia-Assitant.git
 cd RAG-Wikipedia-Assitant
 
 pip install -r requirements.txt
-
+'''
 RAG-Wikipedia-Assistant/
-│
 ├── src/
 │   ├── scraper/
 │   │   └── scraper.py          # Wikipedia text scraper
@@ -36,5 +35,5 @@ RAG-Wikipedia-Assistant/
 ├── .env_example                # Template for API keys
 ├── requirements.txt            # Dependencies
 └── README.md                   # Documentation
-
+'''
 
