@@ -23,7 +23,7 @@ def scrape_page(query: str, summary_only: bool = False, lang: str = "en") -> str
     except DisambiguationError as e:
         return f"Disambiguation page: '{query}' has multiple meanings. Try one of: {', '.join(e.options[:5])}..."
     except PageError:
-        return f"No valid page found for '{query}'."
+        return (f"No valid page found for '{query}'.",)
     except Exception as e:
         return f"Error fetching '{query}': {e}"
 
@@ -55,10 +55,28 @@ def scrape_multiple(
     """
     Scrapes multiple Wikipedia pages and saves each of them to text files in project directory.
     """
+    saved = 0
     for query in page_list:
         content = scrape_page(query, summary_only, lang)
+
+        # FIX: make sure we log before continuing; also guard with isinstance
+        if isinstance(content, str) and (
+            content.startswith("Error")
+            or content.startswith("No page found")
+            or content.startswith("Disambiguation page")
+            or content.startswith("No valid page")
+        ):
+            print("Skipping save due to issue:", content)
+            continue
+
         save_to_text_file("wikipedia_pages", query, content)
-    return {"status": "completed", "pages_scraped": len(page_list)}
+        saved += 1
+
+    return {
+        "status": "completed",
+        "pages_scraped": len(page_list),
+        "pages_saved": saved,
+    }
 
 
 if __name__ == "__main__":
