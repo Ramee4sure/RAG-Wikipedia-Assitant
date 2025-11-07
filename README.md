@@ -24,6 +24,9 @@ git clone https://github.com/Ramee4sure/RAG-Wikipedia-Assitant.git
 cd RAG-Wikipedia-Assitant
 
 pip install -r requirements.txt
+
+GEMINI_API_KEY=your_api_key_here
+
 '''
 RAG-Wikipedia-Assistant/
 ├── src/
@@ -35,5 +38,15 @@ RAG-Wikipedia-Assistant/
 ├── .env_example                # Template for API keys
 ├── requirements.txt            # Dependencies
 └── README.md                   # Documentation
+
 '''
+###  Retrieval-Augmented Generation (RAG) Flow
+
+1. User asks a question  
+2. Scraper retrieves relevant Wikipedia text  
+3. Embeddings are generated from the text  
+4. Vector Database (FAISS) stores and indexes text chunks  
+5. Retriever finds the most relevant context  
+6. LLM generates the final answer using the retrieved context
+
 
