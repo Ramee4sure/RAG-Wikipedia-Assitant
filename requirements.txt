@@ -1,7 +1,9 @@
 langchain
-faiss-cpu
+langchain_community
+langchain-huggingface
 wikipedia
 python-dotenv
 tiktoken
-openai
+sentence-transformers
+langchain-google-genai
 
