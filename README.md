@@ -163,7 +163,7 @@ RAG-Wikipedia-Assitant/
 |------|------|
 | **Ramadan** | GitHub & Documentation |
 | **Manas** | Wikipedia Scraper |
-| **Mohammad** | RAG Chain Development |
+| **Mohammad Anas** | RAG Chain Development |
 | **Akinpeumi** | Integrations & Testing |
 
 ---
