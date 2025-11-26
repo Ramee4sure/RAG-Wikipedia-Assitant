@@ -1,0 +1,17 @@
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\app.py
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\output.txt
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\rag_chain
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\scraper
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\__pycache__
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\rag_chain\rag.py
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\rag_chain\__pycache__
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\rag_chain\__pycache__\rag.cpython-312.pyc
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\rag_chain\__pycache__\rag.cpython-313.pyc
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\rag_chain\__pycache__\__init__.cpython-312.pyc
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\scraper\scraper.py
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\scraper\__pycache__
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\scraper\__pycache__\scraper.cpython-312.pyc
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\scraper\__pycache__\scraper.cpython-313.pyc
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\scraper\__pycache__\scraper.cpython-314.pyc
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\scraper\__pycache__\__init__.cpython-312.pyc
+C:\Users\Ramadan\Desktop\RAG-Wikipedia-Assitant\src\__pycache__\app.cpython-312.pyc

@@ -120,7 +120,7 @@ def start_bot():
     """Main RAG pipeline function."""
     logger.info("🚀 Starting RAG Wikipedia Assistant...")
 
-    dotenv.load_dotenv(".env_example")
+    dotenv.load_dotenv(".env")
 
     google_api_key = os.getenv("GOOGLE_API_KEY")
     topic = os.getenv("WIKIPEDIA_TOPIC", "Artificial Intelligence")

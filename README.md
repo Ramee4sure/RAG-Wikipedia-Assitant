@@ -138,7 +138,7 @@ RAG-Wikipedia-Assitant/
 │
 ├── wikipedia_pages/            # Saved Wikipedia text files
 ├── vectorstore/                # FAISS vector index files
-├── .env_example                # Default environment variables
+├── .env                        # Default environment variables
 ├── requirements.txt            # Project dependencies
 ├── .gitignore                  # Ignored files
 └── README.md                   # Documentation

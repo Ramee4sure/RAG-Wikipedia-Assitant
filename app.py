@@ -10,13 +10,16 @@ and launches the Gemini-powered Retrieval-Augmented Generation system.
 import sys
 import os
 import logging
+from pathlib import Path
 
 # ------------------------------------------------------------
 # Ensure all src submodules are importable (no __init__.py needed)
 # ------------------------------------------------------------
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
-from rag_chain.rag import start_bot
+sys.path.insert(0, str(Path(__file__).parent / 'src'))
+
+from src.rag_chain.rag import start_bot
 
 
 # ------------------------------------------------------------
