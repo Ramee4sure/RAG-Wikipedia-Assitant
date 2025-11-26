@@ -9,7 +9,8 @@ import dotenv
 import logging
 from langchain_community.document_loaders.text import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.messages import HumanMessage
 
@@ -66,7 +67,7 @@ def load_and_split_document(topic: str, chunk_size: int, chunk_overlap: int):
 def embed_store_document(split_docs, save_path: str = "vectorstore"):
     """Embeds text chunks using Gemini embeddings and stores them in a FAISS index."""
     logger.info("Generating embeddings and creating FAISS vector store...")
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
     vector_store = FAISS.from_documents(split_docs, embedding=embeddings)
     vector_store.save_local(save_path)
@@ -89,7 +90,7 @@ def rag_response(query: str, embeddings, k: int = 3):
     results = vector_store.similarity_search(query, k=k)
     retrieved_text = "\n\n".join([doc.page_content for doc in results])
 
-    chat_model = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.6)
+    chat_model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0.6)
 
     context_prompt = f"""
     You are a knowledgeable AI assistant.
