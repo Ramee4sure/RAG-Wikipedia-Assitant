@@ -178,8 +178,7 @@ RAG-Wikipedia-Assitant/
 
 ## 🧾 License
 
-This project is licensed under the **MIT License**.  
-You are free to use, modify, and distribute this project with attribution.
+This project is licensed under the MIT License.
 
 ---
 
